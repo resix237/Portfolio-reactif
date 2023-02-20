@@ -10,7 +10,8 @@ module.exports = {
         violetP: "#21205B",
       },
       fontFamily: {
-        roboto: ["Roboto", "sans-serif"],
+        roboto: ["roboto", "sans-serif"],
+        exo2: ["exo2", "sans-serif"],
       },
     },
   },

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import logo from "./../assets/img/logo3.png";
 import menu from "./../assets/img/menu.png";
 import close from "./../assets/img/close.png";
+import { BsFillMoonStarsFill } from "react-icons/bs";
 const NavBar = () => {
   const [stateCollapse, setStateCollapse] = useState(false);
   return (
@@ -27,42 +28,48 @@ const NavBar = () => {
           )}
         </button>
         <div
-          className="collapse navbar-collapse flex-grow items-center bg-white lg:bg-transparent"
+          className="collapse navbar-collapse  items-center bg-white lg:bg-transparent lg:float-right"
           id="navbarSupportedContent1"
         >
-          <ul className="navbar-nav flex  text-center text-lg font-roboto flex-col pl-0 list-style-none items-center place-items-center mr-auto text-violetP lg:text-white">
-            <li className="nav-item p-2 lg:p-0 border-b lg:border-b-0 w-1/4 lg:w-auto border-violetP">
+          <ul className="navbar-nav flex  text-center text-lg font-normal lg:gap-x-5  flex-col pl-0 list-style-none items-center place-items-center mr-auto  lg:mr-0 text-violetP lg:text-white">
+            <li
+              className="nav-item p-2 lg:p-0 border-b lg:border-b-0 w-1/4  border-violetP hover-underline-animation
+"
+            >
               <a className="nav-link " href="!#">
                 Acceuil
               </a>
             </li>
-            <li className="nav-item p-2 lg:p-0 border-b lg:border-b-0 w-1/4 lg:w-auto border-violetP">
+            <li className="nav-item p-2 lg:p-0 border-b lg:border-b-0 w-1/4  border-violetP hover-underline-animation">
               <a className="nav-link   p-0" href="!#">
                 Biographie
               </a>
             </li>
-            <li className="nav-item p-2 lg:p-0 border-b lg:border-b-0 w-1/4 lg:w-auto border-violetP">
+            <li className="nav-item p-2 lg:p-0 border-b lg:border-b-0 w-1/4  border-violetP hover-underline-animation">
               <a className="nav-link  p-0" href="!#">
                 Projects
               </a>
             </li>
-            <li className="nav-item p-2 lg:p-0 border-b lg:border-b-0 w-1/4 lg:w-auto border-violetP">
+            <li className="nav-item p-2 lg:p-0 border-b lg:border-b-0 w-1/4  border-violetP hover-underline-animation">
               <a className="nav-link p-0" href="!#">
                 Blog
               </a>
             </li>
-            <li className="nav-item p-2 lg:p-0 border-b lg:border-b-0 w-1/4 lg:w-auto border-violetP">
+            <li className="nav-item p-2 lg:p-0 border-b lg:border-b-0 w-1/4  border-violetP hover-underline-animation">
               <a className="nav-link p-0" href="!#">
                 CV
               </a>
             </li>
             <li className="nav-item p-2 lg:p-0  my-3 ">
               <a
-                className="nav-link py-1 px-5 shadow-md lg:shadow-sm shadow-violet-300 rounded-full bg-violetP lg:bg-white lg:text-violetP text-white"
+                className="nav-link py-1 px-10   rounded-full bg-violetP lg:bg-white lg:text-violetP text-white  "
                 href="!#"
               >
                 Contact
               </a>
+            </li>
+            <li className="nav-item rounded-full w-40 h-10 items-center justify-center flex lg:p-0  lg:hover:bg-violet-900 hover:bg-gray-200 ">
+              <BsFillMoonStarsFill />
             </li>
           </ul>
         </div>
